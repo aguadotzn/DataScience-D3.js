@@ -11,18 +11,48 @@ Adrian's cheat sheet for [D3.js](https://d3js.org/). This repository pretend to 
 Let´s start 🚀
 
 ## Table of contents
+- Basic information
+    - [Prerequisites](#Prerequisites)
+    - [What is _D3.js_](#what)
+- [Selections](#selections)
+- [Classes](#)
+- [Link/Href](#)
 
-### 📝 What is _D3.js_? 
-The D3 library (abbreviation of **Data Driven Documents**) is a library written in Javascript that allows the inclusion of graphs and visualizations of data in any standard web page.
 
-
-## Prerequisites
+#### Prerequisites
 
 * You are familiar with HTML, the DOM, and CSS
 * Have a little programming experience already
 * Aren’t scared by unknown initialisms like CSV, SVG, or JSON
+  
+
+#### 📝 What is _D3.js_? 
 
 
+<a href="https://d3js.org"><img src="https://d3js.org/logo.svg" align="left" hspace="10" vspace="6"></a>
+The D3 library (abbreviation of **Data Driven Documents**) is a library written in Javascript that allows the inclusion of graphs and visualizations of data in any standard web page. For further and detailed information visit D3.js github [here](https://github.com/d3/d3).
+
+## Selections
+
+| Command        | Explanation      | Example  |
+| ------------- |:-------------:| -----:|
+| d3.select()      | Returns the element found |  d3.select("svg") |
+| d3.selectAll()      | Returns all found elements      |    d3.selectAll("circle") |
+| selection.append() | Creates a new element inside the selection      |   d3.select("svg").append("circle") |
+
+
+## Attributes/Styles - initialization
+```javascript
+var svgWrapper = d3.select("body")
+  .append("svg")
+  .attr("id", "viz")
+  .attr("width", width + margin.left + margin.right)
+  .attr("height", height + margin.top + margin.bottom);
+
+var container = svgWrapper.append("g")
+  .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+  .style("pointer-events", "all");
+```
 
 
 ## Examples
@@ -34,6 +64,8 @@ There is a folder 📂 call _Examples_ inside you can see some of cases that I u
 ## Authors
 
 * **Adrián**  👨🏻‍💻
+  
+- [x] Feel free to contribute
 
 ## Contributors
 
