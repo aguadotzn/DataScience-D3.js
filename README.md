@@ -29,13 +29,14 @@ Let´s start 🚀
 #### 📝 What is _D3.js_? 
 
 
-<a href="https://d3js.org"><img src="https://d3js.org/logo.svg" align="left" hspace="10" vspace="6"></a>
+<a href="https://d3js.org"><img src="https://d3js.org/logo.svg" align="left" hspace="5" vspace="6"></a>
 The D3 library (abbreviation of **Data Driven Documents**) is a library written in Javascript that allows the inclusion of graphs and visualizations of data in any standard web page. For further and detailed information visit D3.js github [here](https://github.com/d3/d3).
+ 
 
 ## Selections
 
 | Command        | Explanation      | Example  |
-| ------------- |:-------------:| -----:|
+|:-------------:|:-------------:|:-----:|
 | d3.select()      | Returns the element found |  d3.select("svg") |
 | d3.selectAll()      | Returns all found elements      |    d3.selectAll("circle") |
 | selection.append() | Creates a new element inside the selection      |   d3.select("svg").append("circle") |
@@ -57,7 +58,7 @@ var container = svgWrapper.append("g")
 
 ## Examples
 
-There is a folder 📂 call _Examples_ inside you can see some of cases that I used to try the library.
+There is a folder  call _Examples📂_ inside you can see some of cases that I used to try the library.
 
 ⚠️ Please if you have any problems installing visit the D3.js github [here](https://github.com/d3/d3).
 
